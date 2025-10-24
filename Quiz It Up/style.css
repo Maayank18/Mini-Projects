@@ -1,0 +1,120 @@
+/* 🌿 Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🌼 Body Styling */
+  body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 🌟 Container */
+  .container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: left;
+  }
+  
+  /* 🏏 Title */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  
+  /* 🧠 Questions */
+  .question {
+    margin-bottom: 25px;
+  }
+  
+  .question p {
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  
+  /* 🏷️ Options */
+  label {
+    display: block;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin: 6px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  label:hover {
+    background: #e6f0ff;
+    border-color: #007bff;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    accent-color: #007bff;
+  }
+  
+  /* 🏁 Submit Button */
+  .submit-btn {
+    display: block;
+    margin: 20px auto 0;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #0056b3;
+  }
+  
+  /* 📊 Result Section */
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  #out {
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: 500;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .container h1 {
+      font-size: 24px;
+    }
+  
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  

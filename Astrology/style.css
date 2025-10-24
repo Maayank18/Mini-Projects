@@ -1,0 +1,129 @@
+/* 🌌 Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🪐 Body */
+  body {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle at top left, #0a021a, #100225, #1b093c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e8dcff;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* 🌙 Main Container */
+  .container {
+    background: rgba(20, 10, 40, 0.8);
+    border: 1px solid rgba(120, 90, 180, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(130, 80, 255, 0.3);
+    padding: 35px 45px;
+    width: 340px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* 🌠 Heading */
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #c9a7ff;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(170, 120, 255, 0.6);
+  }
+  
+  /* 💫 Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  /* 🌟 Labels */
+  label {
+    text-align: left;
+    font-size: 0.9rem;
+    color: #d5c4ff;
+    letter-spacing: 0.4px;
+  }
+  
+  /* 🌌 Inputs */
+  input {
+    padding: 9px 11px;
+    border: 1px solid rgba(130, 100, 200, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #f2ebff;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(180, 130, 255, 0.6);
+    box-shadow: 0 0 8px rgba(180, 130, 255, 0.5);
+  }
+  
+  /* 🔮 Button */
+  button {
+    margin-top: 15px;
+    padding: 11px;
+    background: linear-gradient(90deg, #5e2d91, #8e44ad, #a46bff);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #8e44ad, #a46bff, #caa2ff);
+    box-shadow: 0 0 15px rgba(190, 140, 255, 0.7);
+  }
+  
+  /* 🌌 Result Section */
+  .result {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #f1e9ff;
+    text-shadow: 0 0 12px rgba(200, 150, 255, 0.4);
+  }
+  
+  /* 🌠 Background Glow */
+  body::before,
+  body::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  body::before {
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(160, 100, 255, 0.15), transparent 70%);
+    top: 10%;
+    right: -150px;
+    filter: blur(60px);
+  }
+  
+  body::after {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 200, 255, 0.1), transparent 70%);
+    bottom: 10%;
+    left: -100px;
+    filter: blur(70px);
+  }
+  

@@ -1,0 +1,60 @@
+const quotes = [
+    "The best way to get started is to quit talking and begin doing.",
+    "Dream big and dare to fail.",
+    "Don’t watch the clock; do what it does. Keep going.",
+    "Success is not in what you have, but who you are.",
+    "The harder you work for something, the greater you’ll feel when you achieve it.",
+    "Dream it. Wish it. Do it.",
+    "Don’t stop when you’re tired. Stop when you’re done.",
+    "Little things make big days.",
+    "It always seems impossible until it’s done.",
+    "Push yourself, because no one else is going to do it for you.",
+    "Great things never come from comfort zones.",
+    "Wake up with determination. Go to bed with satisfaction.",
+    "Don’t limit your challenges, challenge your limits.",
+    "Do something today that your future self will thank you for.",
+    "Discipline is the bridge between goals and accomplishment.",
+    "Success doesn’t just find you. You have to go out and get it.",
+    "The key to success is to focus on goals, not obstacles.",
+    "Doubt kills more dreams than failure ever will.",
+    "Believe you can and you’re halfway there.",
+    "Don’t be afraid to give up the good to go for the great.",
+    "Success is what happens after you have survived all your mistakes.",
+    "The only way to do great work is to love what you do.",
+    "Start where you are. Use what you have. Do what you can.",
+    "Your limitation—it’s only your imagination.",
+    "Sometimes later becomes never. Do it now.",
+    "Great things take time.",
+    "Work hard in silence, let your success make the noise.",
+    "If you want it, work for it.",
+    "Don’t wish for it, work for it.",
+    "Stay positive, work hard, make it happen.",
+    "Your only limit is your mind.",
+    "Difficult roads often lead to beautiful destinations.",
+    "Hustle in silence and let your success shout.",
+    "Don’t be busy, be productive.",
+    "Strive for progress, not perfection.",
+    "Stay humble, work hard, be kind.",
+    "Make today so awesome that yesterday gets jealous.",
+    "Success doesn’t come from what you do occasionally, it comes from what you do consistently.",
+    "You don’t have to be perfect to be amazing.",
+    "If you get tired, learn to rest, not to quit.",
+    "Be stronger than your excuses.",
+    "Start small, think big, move fast.",
+    "A little progress each day adds up to big results.",
+    "If you never try, you’ll never know.",
+    "Do what you can with all you have, wherever you are.",
+    "Act as if what you do makes a difference. It does.",
+    "Don’t wait for opportunity. Create it.",
+    "You are capable of more than you know.",
+    "The secret of getting ahead is getting started.",
+    "Believe in yourself and all that you are."
+  ];
+
+ const button = document.querySelector('button');
+ const quote = document.querySelector('h1');
+
+ button.addEventListener('click', ()=>{
+    const index = Math.floor(Math.random()*20);
+    quote.textContent = quotes[index];
+ })
